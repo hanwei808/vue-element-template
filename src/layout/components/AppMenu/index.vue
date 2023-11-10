@@ -18,24 +18,19 @@
   
       <el-sub-menu index="1">
         <template #title>
-          <el-icon><Guide /></el-icon>
+          <el-icon><Operation /></el-icon>
           <span>权限管理</span>
         </template>
         <el-menu-item index="/permission/permission_admin">
-          管理员
+          管理员列表
         </el-menu-item>
         <el-menu-item index="/permission/permission_role">
-          角色
+          角色列表
         </el-menu-item>
         <el-menu-item index="/permission/permission_rule">
-          规则
+          规则列表
         </el-menu-item>
       </el-sub-menu>
-  
-      <el-menu-item index="4">
-        <el-icon><setting /></el-icon>
-        <span>设置</span>
-      </el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -43,8 +38,7 @@
   <script lang="ts" setup>
     import {
       House,
-      Guide,
-      Setting,
+      Operation,
     } from '@element-plus/icons-vue'
   
     const handleOpen = (key: string, keyPath: string[]) => {
