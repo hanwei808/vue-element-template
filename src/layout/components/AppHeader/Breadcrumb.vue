@@ -18,4 +18,9 @@ const routes = computed(()=>{
     return router.currentRoute.value.matched.filter(item => item.meta.title)
 })
 </script>
-  
+
+<style lang="scss" scoped>
+.el-breadcrumb {
+    margin-left: 16px;
+}
+</style>

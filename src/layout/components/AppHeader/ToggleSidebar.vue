@@ -1,6 +1,5 @@
 <template>
   <el-icon
-    class="toggle-sidebar"
     size="22"
     @click="handleCollapse"
   >
@@ -22,10 +21,3 @@ const handleCollapse = () => {
     store.commit('toggleCollapse', !store.state.isCollapse)
 }
 </script>
-
-<style lang="scss" scoped>
-.toggle-sidebar {
-    cursor: pointer;
-    margin: 0 20px;
-}
-</style>

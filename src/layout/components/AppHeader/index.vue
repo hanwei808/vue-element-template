@@ -6,12 +6,18 @@
     </div>
     <div class="right">
       <FullScreen />
-      <h1>Header</h1>
+      <el-button
+        :icon="Avatar"
+        circle
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import {
+    Avatar
+  } from '@element-plus/icons-vue'
 import ToggleSidebar from './ToggleSidebar.vue';
 import Breadcrumb from './Breadcrumb.vue'
 import FullScreen from './FullScreen.vue'
@@ -22,6 +28,7 @@ import FullScreen from './FullScreen.vue'
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 16px;
     .left,.right {
         display: flex;
         align-items: center;
